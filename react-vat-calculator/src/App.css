@@ -1,0 +1,114 @@
+/* Root container styling */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Logo styling */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Logo spin animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card styling */
+.card {
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #007bff; /* Border color */
+  text-align: center;
+}
+
+/* Headings */
+h1, h2 {
+  color: #333; /* Text color */
+  text-align: center;
+}
+
+/* Button styling */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* VAT calculator styling */
+.vat-calculator {
+  margin: 2rem auto;
+  max-width: 400px;
+  padding: 1.5rem;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #28a745; /* Border color for VAT calculator */
+}
+
+/* Input fields */
+.input-group {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  width: 100px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Calculate button */
+.calculate-button {
+  background-color: #28a745;
+}
+
+.calculate-button:hover {
+  background-color: #218838;
+}
+
+/* VAT result display */
+.vat-result {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.vat-result p {
+  font-size: 1.2rem;
+  color: #333;
+}
